@@ -1,0 +1,34 @@
+title Web 3
+
+component NFT [0.93, 0.36]
+component Crypto/NFT Wallet [0.83, 0.74]
+component Crypto/NFT API [0.73, 0.73]
+
+component NFT Creator [0.25, 0.13]
+component NFT Platform [0.83, 0.53]
+
+component Ethereum [0.77, 0.24]
+component Not Ethereum [0.59, 0.21]
+component Crypto Bridge [0.60, 0.05]
+
+component DAO [0.39, 0.33]
+
+component 1:many:many (Discord/Twitter) [0.90, 0.78]
+
+component NFT staking [0.95, 0.54]
+
+Crypto/NFT Wallet->Crypto/NFT API
+Crypto/NFT Wallet->NFT
+NFT->NFT Platform
+Crypto/NFT Wallet->NFT Platform
+NFT Creator->NFT Platform
+Ethereum->NFT Platform
+Not Ethereum->NFT Platform
+Ethereum->Crypto/NFT API
+Not Ethereum->Crypto/NFT API
+Ethereum->Crypto Bridge
+Not Ethereum->Crypto Bridge
+1:many:many (Discord/Twitter)->NFT
+DAO->NFT
+NFT->NFT staking
+1:many:many (Discord/Twitter)->NFT staking
