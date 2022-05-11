@@ -1,6 +1,7 @@
 title Creating cloud services
 
-component Customer [0.99, 0.56]
+component User [0.99, 0.63]
+component outside User [0.99, 0.45]
 
 component Integration [0.59, 0.34] 
 pipeline Integration [0.2, 1.0]
@@ -12,10 +13,25 @@ component NoLowCode [0.58, 0.87] label [-1, -14]
 component MashUps [0.90, 0.29]
 
 NoLowCode->MashUps
-MashUps->Customer
+MashUps->User
+MashUps->outside User
 
 // Lessons: 
 // Mashups of various services are what we want
 // Easiest way to get to a mashup is to use No or Low Code (zapier/xfanatical)
 // If a mashup is sufficiently valuable doing the integration with an IaaS or PaaS would make sense, but it would have to provide a lot of value to offset the cost/complexity of building it ourselves
 // No we can start to bound and decide what is worth doing outside of no/low code solutions, or do we just live without it
+
+component security [0.30, 0.13]
+pipeline security [0.1, 0.8]
+component Boundaries between providers [0.28, 0.13] inertia
+component Oauth/etc [0.28, 0.40]
+component SAML Auth [0.28, 0.27]
+component Activity data [0.29, 0.52]
+component Security Data [0.28, 0.62]
+
+// We can barely authenticate users between cloud services
+// To say nothing of moving activity data or security data
+// between them (e.g. this data is classified at X)
+// To whit the GitHub/Heroku/etc hack.
+
