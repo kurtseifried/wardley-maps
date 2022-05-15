@@ -1,0 +1,33 @@
+title Shared Responsibility for OpenSource in Cloud
+
+component permissive license (Apache/MIT/BSD) [0.32, 0.06]
+pipeline permissive license (Apache/MIT/BSD) [0.1, 0.7]
+component owes you nothing [0.29, 0.08]
+component support contract [0.28, 0.35]
+
+component distribution license (GPL) [0.28, 0.22]
+pipeline distribution license (GPL)
+component owes you nothing [0.29, 0.08]
+component Contributor License Agreement (CLA)
+component dual license [0.29, 0.69]
+
+component product [0.77, 0.53]
+component service [0.84, 0.50]
+
+component abandoned dev [0.44, 0.14]
+component lifesupport dev [0.44, 0.23]
+component inactive dev [0.42, 0.32]
+component semiactive dev [0.45, 0.40]
+component active dev [0.44, 0.46]
+
+
+
+component abandoned project [0.64, 0.14]
+component lifesupport project [0.64, 0.23]
+component inactive project [0.62, 0.32]
+component semiactive project [0.65, 0.40]
+component active project [0.64, 0.46]
+
+
+// Sources
+// https://twitter.com/bagder/status/1525038450226888704?s=11&t=5vxPaeLrK81NF6x3sW93BA
