@@ -3,15 +3,24 @@ title Creating cloud services
 component User [0.99, 0.63]
 component outside User [0.99, 0.45]
 
-component Integration [0.59, 0.34] 
-pipeline Integration [0.2, 1.0]
-component IaaS [0.58, 0.26] label [-4, -14]
-component PaaS [0.57, 0.44] label [8, -24]
-component SaaS [0.58, 0.72] label [-2, -15]
-component NoLowCode [0.58, 0.87] label [-1, -14]
+component Platforms [0.61, 0.20] label [-8, 41]
+pipeline Platforms [0.20, 0.80]
+component IaaS [0.60, 0.26] label [-4, -14]
+component PaaS [0.60, 0.44] label [8, -24]
+component SaaS [0.60, 0.72] label [-2, -15]
+
+
+component Integration [0.78, 0.10]
+pipeline Integration [0.1, 0.6]
+component NoLowCode [0.76, 0.54] label [-1, -14]
+component DevIntegration [0.76, 0.30]
+
 
 component MashUps [0.90, 0.29]
 
+IaaS->DevIntegration
+DevIntegration->MashUps
+SaaS->NoLowCode
 NoLowCode->MashUps
 MashUps->User
 MashUps->outside User
@@ -35,3 +44,7 @@ component Security Data [0.28, 0.62]
 // between them (e.g. this data is classified at X)
 // To whit the GitHub/Heroku/etc hack.
 
+component visibility into platform [0.42, 0.16]
+component audit logs [0.41, 0.48]
+component billing [0.41, 0.27]
+component billing guardrails [0.41, 0.34]
