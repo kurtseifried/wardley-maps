@@ -44,7 +44,8 @@ component Security Data [0.28, 0.62]
 // between them (e.g. this data is classified at X)
 // To whit the GitHub/Heroku/etc hack.
 
-component visibility into platform [0.42, 0.16]
-component audit logs [0.41, 0.48]
-component billing [0.41, 0.27]
-component billing guardrails [0.41, 0.34]
+component visibility into platform [0.1, 0.16]
+pipeline visibility into platform [0.1, 0.6]
+component audit logs [0.1, 0.48]
+component billing [0.1, 0.27]
+component billing guardrails [0.1, 0.34]
