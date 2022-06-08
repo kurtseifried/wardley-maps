@@ -1,0 +1,20 @@
+title Extraction of value from real estate
+
+
+component selling houses [0.52, 0.22]
+component foriegn buyers [0.52, 0.44]
+component corp buy and rent [0.52, 0.34]
+
+
+component renovations [0.15, 0.15]
+component flipping [0.15, 0.25]
+component developing raw land [0.15, 0.40]
+component redeveloping [0.15, 0.50]
+
+
+component Mortgage [0.30, 0.20]
+component CDO [0.30, 0.33]
+component HELOC [0.30, 0.58]
+component Reverse Mortgage [0.30, 0.44]
+
+
