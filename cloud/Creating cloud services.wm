@@ -28,11 +28,16 @@ pipeline UserIdentification [0.3, 0.7]
 component HRaaS [0.68, 0.51] label [-3, 30]
 component AuthProvider [0.68, 0.37] label [-28, 25]
 
-component EndDeviceControl [0.58, 0.55] label [-2, -23]
+component UserDeviceControl [0.58, 0.55] label [-2, -23]
 // Things like Okta with device control
 
+
+component ComponentDeviceControl [0.59, 0.06] label [8, -23]
 component ComponentIdentification [0.20, 0.26] label [6, -18]
 // bits of Apps/SaaS
+
+
+component SecretsVault [0.38, 0.29]
 
 IaaS->DevIntegration
 DevIntegration->MashUps
