@@ -7,8 +7,8 @@ title upgrades / dep pinning
 
 
 
-component Software [0.43, 0.31] label [-26, -19]
-pipeline Software [0.2, 0.7]
+component Software Updates [0.43, 0.29] label [-26, -34]
+pipeline Software Updates [0.2, 0.7]
 component NoUpdate [0.4, 0.23] label [-31, 23]
 component ManualUpdate [0.4, 0.42] label [-43, 24]
 component ManagedUpdate [0.4, 0.51] label [-25, 22]
@@ -17,7 +17,7 @@ component AutoUpdate [0.4, 0.63] label [-15, 22]
 
 // Not just maturity but the level of control retained by
 // the original creator/seller
-component Software/Service Delivery [0.57, 0.20] label [-27, -39]
+component Software/Service Delivery [0.57, 0.10] label [-27, -39]
 pipeline Software/Service Delivery [0.1, 0.8]
 component OnPrem Software [0.54, 0.20] label [-23, 11]
 // example: Works on Linux(s)
@@ -32,8 +32,8 @@ component AsAService [0.54, 0.8] label [-24, 24]
 
 
 
-component SourceCode [0.23, 0.22] label [-34, -15]
-pipeline SourceCode [0.2, 0.6]
+component SourceCode Updates [0.23, 0.20] label [-27, -37]
+pipeline SourceCode Updates [0.2, 0.6]
 component DepPinning [0.2, 0.26] label [-28, 23]
 component DepNoPinning [0.2, 0.37] label [-33, 23]
 component DepHybridPinning [0.2, 0.53] label [-22, 11]
