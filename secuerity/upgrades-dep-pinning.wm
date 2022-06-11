@@ -1,0 +1,41 @@
+title upgrades / dep pinning
+// Use https://onlinewardleymaps.com/ to view this data
+
+// REALIZATION: (obvious in hindsight) any software 
+// updates/changes are basically the same fundemental 
+// model as source code and dependency chains
+
+
+
+component Software [0.43, 0.31]
+pipeline Software [0.2, 0.7]
+component NoUpdate [0.4, 0.23]
+component ManualUpdate [0.4, 0.42]
+component ManagedUpdate [0.4, 0.51]
+component AutoUpdate [0.4, 0.63]
+
+
+// Not just maturity but the level of control retained by
+// the original creator/seller
+component Software/Service Delivery [0.57, 0.20] label [3, -33]
+pipeline Software/Service Delivery [0.1, 0.8]
+component OnPrem Software [0.54, 0.20]
+// example: Works on Linux(s)
+component RequiredPlatform [0.54, 0.4]
+// example: Only certified on Windows 11
+component Appliance [0.54, 0.6]
+// examnple: container/hardware with full stack
+component Hosted [0.54, 0.7]
+// example: VPS with Wordpress preinstalled, you have to update
+component AsAService [0.54, 0.8]
+// exanmple: wordpress.com
+
+
+
+component SourceCode [0.23, 0.22]
+pipeline SourceCode [0.2, 0.6]
+component DepPinning [0.2, 0.26]
+component DepNoPinning [0.2, 0.37]
+component DepHybridPinning [0.2, 0.53]
+
+
