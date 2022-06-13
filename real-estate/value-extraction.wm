@@ -1,6 +1,12 @@
 title Extraction of value from real estate
 
 
+component renter [0.90, 0.86]
+component homeowner [0.91, 0.64]
+component corprental [0.92, 0.55]
+component corpflipping [0.92, 0.31]
+
+
 component corp buy and sell houses [0.52, 0.22]
 component foriegn buyers [0.52, 0.44]
 component corp buy and rent [0.52, 0.34]
