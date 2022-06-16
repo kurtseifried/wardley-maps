@@ -1,8 +1,10 @@
 title upgrades / dep pinning
 // Use https://onlinewardleymaps.com/ to view this data
 
-// REALIZATION: (obvious in hindsight) any software 
-// updates/changes are basically the same fundemental 
+// More content: My Files / PUBLIC-PRESENTATIONS / Dependency Pinning 
+
+// REALIZATION: (obvious in hindsight) any software
+// updates/changes are basically the same fundemental
 // model as source code and dependency chains
 
 
@@ -37,5 +39,3 @@ pipeline SourceCode Updates [0.2, 0.6]
 component DepPinning [0.2, 0.26] label [-28, 23]
 component DepNoPinning [0.2, 0.37] label [-33, 23]
 component DepHybridPinning [0.2, 0.53] label [-22, 11]
-
-
