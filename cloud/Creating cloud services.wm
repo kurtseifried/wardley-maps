@@ -1,4 +1,4 @@
-title Creating cloud services in a SaaS world
+title Creating cloud services in a complicated on prem/I/P/Saas world
 // Cut and paste this text into https://onlinewardleymaps.com/ to view and manipulate it
 
 // TODO: relationships
@@ -7,23 +7,28 @@ title Creating cloud services in a SaaS world
 component User [0.99, 0.63]
 component outside User [0.99, 0.45]
 
-
 component MashUps [0.90, 0.29]
 // What the end user is seeing
 
 component Integration [0.78, 0.10]
 pipeline Integration [0.1, 0.6]
-component NoLowCode [0.76, 0.54] label [-1, -14]
-component DevIntegration [0.76, 0.30]
+
+component DevIntegration [0.77, 0.24]
+// DevIntegration requires programmers, code, infra to run it
+component TechIntegration [0.77, 0.41] label [-3, -23]
+// TechIntegration requires APIs/technical interface/management
+component AppIntegration [0.77, 0.47] label [-17, 28]
+// AppIntegration requires login typically "I consent"
+component NoLowCode [0.77, 0.56] label [-1, -14]
+// NoLowCode typically is a mix of the above with an intermediaryproviding the services
 
 
 component Platforms [0.50, 0.20] label [-8, 41]
 pipeline Platforms [0.20, 0.80]
-component IaaS [0.50, 0.26] label [-4, -14]
-component PaaS [0.50, 0.44] label [8, -24]
+component OnPremises [0.49, 0.25] label [-25, -14]
+component IaaS [0.49, 0.35] label [-4, -14]
+component PaaS [0.50, 0.44] label [9, -10]
 component SaaS [0.50, 0.72] label [-2, -15]
-
-
 
 component UserIdentification [0.69, 0.32] label [7, -22]
 // MFA/2FA, strong user identity
@@ -35,19 +40,21 @@ component AuthProvider [0.68, 0.37] label [-28, 25]
 component UserDeviceControl [0.58, 0.55] label [-2, -23]
 // Things like Okta with device control
 
-
 component ComponentDeviceControl [0.59, 0.06] label [8, -23]
 component ComponentIdentification [0.20, 0.26] label [6, -18]
 // bits of Apps/SaaS
 
-
 component SecretsVault [0.38, 0.29]
 component IAM [0.37, 0.40]
 
+OnPremises->DevIntegration
 IaaS->DevIntegration
 DevIntegration->MashUps
+PaaS->TechIntegration
+SaaS->TechIntegration
 SaaS->NoLowCode
 NoLowCode->MashUps
+TechIntegration->MashUps
 MashUps->User
 MashUps->outside User
 
@@ -56,7 +63,6 @@ MashUps->outside User
 // Easiest way to get to a mashup is to use No or Low Code (zapier/xfanatical)
 // If a mashup is sufficiently valuable doing the integration with an IaaS or PaaS would make sense, but it would have to provide a lot of value to offset the cost/complexity of building it ourselves
 // No we can start to bound and decide what is worth doing outside of no/low code solutions, or do we just live without it
-
 
 // TODO: SAML Oauth removal/move to user identification?
 
