@@ -7,7 +7,7 @@ title Creating cloud services in a complicated on prem/I/P/Saas world
 component User [0.99, 0.63]
 component outside User [0.99, 0.45]
 
-component MashUps [0.90, 0.29]
+component CloudMashUps [0.90, 0.29]
 // What the end user is seeing
 
 component Integration [0.78, 0.10]
@@ -49,19 +49,19 @@ component IAM [0.37, 0.40]
 
 OnPremises->DevIntegration
 IaaS->DevIntegration
-DevIntegration->MashUps
+DevIntegration->CloudMashUps
 PaaS->TechIntegration
 SaaS->TechIntegration
 SaaS->NoLowCode
-NoLowCode->MashUps
-TechIntegration->MashUps
-MashUps->User
-MashUps->outside User
+NoLowCode->CloudMashUps
+TechIntegration->CloudMashUps
+CloudMashUps->User
+CloudMashUps->outside User
 
 // Lessons: 
-// Mashups of various services are what we want
-// Easiest way to get to a mashup is to use No or Low Code (zapier/xfanatical)
-// If a mashup is sufficiently valuable doing the integration with an IaaS or PaaS would make sense, but it would have to provide a lot of value to offset the cost/complexity of building it ourselves
+// CloudMashUps of various services are what we want
+// Easiest way to get to a CloudMashUps is to use A Technical integration or a No or Low Code (zapier/xfanatical)
+// If a CloudMashUp is sufficiently valuable doing the integration with an IaaS or PaaS would make sense, but it would have to provide a lot of value to offset the cost/complexity of building it ourselves
 // No we can start to bound and decide what is worth doing outside of no/low code solutions, or do we just live without it
 
 // TODO: SAML Oauth removal/move to user identification?
