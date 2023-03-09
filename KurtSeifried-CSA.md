@@ -32,5 +32,3 @@ component NewTech Mashup Security [0.74, 0.23]
 component GSD Ecosystem Building [0.71, 0.50]
 component GSD Data Enrichment [0.36, 0.57]
 component GSD Evangilism [0.54, 0.56]
-
-
