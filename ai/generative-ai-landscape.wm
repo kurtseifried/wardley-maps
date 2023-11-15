@@ -26,8 +26,21 @@ component user [0.98, 0.47]
 
 component AI code execution [0.60, 0.10]
 
-component Emergent behaviors
 // like "let's think about this step by step" or "this is really important to my career"
+component Emergent behaviors [0.19, 0.16]
+
+
+// AI App hosting
+//IaaS
+component AI Hardware [0.14, 0.74]
+//?aaS
+component AI low level service hosting
+//PaaS
+component AI Platform [0.28, 0.68]
+//SaaS
+component AI Service [0.38, 0.64]
+
+
 
 
 // Security aspects
