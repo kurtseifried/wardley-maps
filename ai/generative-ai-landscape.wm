@@ -1,0 +1,35 @@
+// working draft
+
+title AI Landscape
+
+component Training data for models [0.09, 0.11]
+component Training data for fine tuning [0.26, 0.30] label [5, -10]
+component Training data for RAG [0.39, 0.49]
+
+component Foundation Model [0.29, 0.17] label [5, -10]
+component Fine Tuned Model [0.41, 0.29]
+component RAG enhanced Model [0.49, 0.40]
+component context data for prompt [0.60, 0.54]
+
+component guardrails [0.42, 0.14]
+component orchestration layer [0.52, 0.14] label [11, -12]
+component plugins [0.70, 0.23]
+
+component playground [0.58, 0.24]
+component API [0.66, 0.30]
+
+component AI App hosting [0.84, 0.26]
+component AI Answer  Bot [0.77, 0.46]
+component AI Agent [0.68, 0.10]
+
+
+component user [0.98, 0.47]
+
+component AI code execution [0.60, 0.10]
+
+
+// Sources: 
+// Kurt Seifried
+// https://a16z.com/emerging-architectures-for-llm-applications/
+// "Natural Language Computer" https://youtu.be/JhCl-GeT4jw?t=2023
+// 
