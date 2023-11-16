@@ -33,10 +33,17 @@ component Emergent behaviors [0.19, 0.16]
 // AI App hosting
 //IaaS
 component AI Hardware [0.14, 0.74]
+// Access to AI hardware
+
 //?aaS
 component AI low level service hosting
+// Access to sufficient systems/network/etc
+
 //PaaS
 component AI Platform [0.28, 0.68]
+// Access to training data
+// Access to foundation models
+
 //SaaS
 component AI Service [0.38, 0.64]
 
