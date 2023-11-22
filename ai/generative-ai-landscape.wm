@@ -18,9 +18,9 @@ component playground [0.58, 0.24]
 component API [0.66, 0.30]
 
 component AI App hosting [0.84, 0.26]
-component AI Answer  Bot [0.77, 0.46]
+component AI Answer Bot [0.77, 0.46]
 component AI Agent [0.68, 0.10]
-
+component AI Chat Interface [0.83, 0.62]
 
 component user [0.98, 0.47]
 
@@ -36,7 +36,7 @@ component AI Hardware [0.14, 0.74]
 // Access to AI hardware
 
 //?aaS
-component AI low level service hosting
+component AI low level service hosting [0.21, 0.51]
 // Access to sufficient systems/network/etc
 
 //PaaS
@@ -47,8 +47,8 @@ component AI Platform [0.28, 0.68]
 //SaaS
 component AI Service [0.38, 0.64]
 
-
-
+AI Answer Bot -> user
+AI Chat Interface -> user
 
 // Security aspects
 // logging AI prompts and results
@@ -74,11 +74,8 @@ component AI Service [0.38, 0.64]
 // Something about AI transparency being effectively impossible?
 
 
-
 // Sources: 
 // Kurt Seifried
 // https://a16z.com/emerging-architectures-for-llm-applications/
 // "Natural Language Computer" https://youtu.be/JhCl-GeT4jw?t=2023
 // builder.io says the correct way to build an AI app is not the simple way, sitting on top of OpenAI, but to build your own toolchain https://www.builder.io/blog/build-ai
-
-
