@@ -84,3 +84,7 @@ component Stakeholder engagement [0.02, 0.02]
 // We need some better reporting/data to support the following:
 component Success Metrics/KPIs [0.02, 0.02]
 
+// We need to standardize and do better internally on:
+component Project Management [0.02, 0.02]
+component Task Management [0.02, 0.02]
+
