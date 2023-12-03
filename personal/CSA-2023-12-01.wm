@@ -32,4 +32,55 @@ component Chapter Virtual Events [0.44, 0.47]
 component success metrics/KPIs [0.49, 0.10]
 
 // This one
-component Finding AI tools [0.68, 0.09]
+component AI Tools Finding [0.68, 0.09]
+component AI Tools - Best Practices [0.82, 0.08]
+component AI Strategy - CSA [0.44, 0.05]
+
+
+component AI Agent - External [0.73, 0.21]
+component AI Agent - CSA [0.30, 0.47]
+
+// CONSOLIDATED
+
+// CSA Users
+component User - CSA Internal [0.02, 0.02]
+component User - CSA Research [0.02, 0.02]
+component User - CSA WGs [0.02, 0.02]
+component User - CSA Chapters [0.02, 0.02]
+component User - CSA Members [0.02, 0.02]
+component User - Public [0.02, 0.02]
+
+
+component CSA IT [0.02, 0.02]
+component CSA IT Automation [0.02, 0.02]
+component CSA WG Standardization [0.02, 0.02]
+component CSA IT Chapters [0.02, 0.02]
+component CSA Chapters Virtual Events [0.02, 0.02]
+
+// COninuing content creation
+component CSA Content (int/external) [0.02, 0.02]
+// blogs
+// internal memos?
+// papers
+// training material
+// AI howto/prompts (agents? coding? AI apps?)
+
+// CSA AI work
+component CSA AI Strategy [0.02, 0.02]
+component CSA AI Tools External (Agents, etc.) [0.02, 0.02]
+component CSA AI Tools Internal (Agents, etc.) [0.02, 0.02]
+component CSA AI Processes/Docs [0.02, 0.02]
+
+// New efforts?
+component CSA AI Tools Skunkworks [0.02, 0.02]
+
+// CSA Thought work
+component CSA Wardley Maps [0.02, 0.02]
+component CSA Mind Maps [0.02, 0.02]
+
+// Capabilities / areas to address
+component User feedback (loops, AI processing) [0.02, 0.02]
+component Stakeholder engagement [0.02, 0.02]
+// We need some better reporting/data to support the following:
+component Success Metrics/KPIs [0.02, 0.02]
+
