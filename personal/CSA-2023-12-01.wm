@@ -5,20 +5,23 @@ component User - CSA Research [0.99, 0.40]
 component User - CSA WGs [0.99, 0.55]
 component User - CSA Chapters [0.99, 0.65]
 component User - CSA Members [0.99, 0.80]
+component User - CSA Exams [0.99, 0.85]
 component User - Public [0.99, 0.90]
 
 // Basic duties
 //
-component CSA IT [0.53, 0.79]
-component CSA IT Automation [0.15, 0.25]
-component CSA WG Standardization [0.53, 0.11]
-component CSA IT Chapters [0.25, 0.35]
-component CSA Chapters Virtual Events [0.50, 0.60]
+component CSA IT [0.27, 0.75]
+component CSA IT Automation [0.35, 0.25]
+component CSA WG Standardization [0.44, 0.15]
+component CSA IT Chapters [0.31, 0.56] label [5, -10]
+component CSA Chapters Virtual Events [0.64, 0.68]
 
 // Basic specific technical skills
 //
-component Zapier [0.04, 0.83]
-component Prompt Engineering [0.60, 0.40] 
+component Zapier Zaps [0.05, 0.30]
+
+// I asked the AI to do and it failed. VS. We need to get better at using AI tools, prompting, measuring results and so on.
+component Prompt Engineering [0.48, 0.24] 
 
 // Continuing content creation
 //
@@ -31,35 +34,79 @@ component CSA Content (int/external) [0.69, 0.77]
 
 // CSA AI outcomes
 //
-component CSA AI Strategy [0.77, 0.09]
-component CSA AI Tools External (Agents, etc.) [0.77, 0.30]
-component CSA AI Tools Internal (Agents, etc.) [0.40, 0.55]
-component CSA AI Processes/Docs [0.45, 0.42]
+component CSA AI Strategy [0.65, 0.12]
+component CSA AI Tools External (Agents, RAG, etc.) [0.81, 0.28]
+component CSA AI Tools Internal (Agents, RAG, etc.) [0.55, 0.49]
+component CSA AI Processes/Docs [0.53, 0.11]
 
 // CSA Specific AI work
 //
-component AI Tool Discovery/Research [0.82, 0.16]
-component AI Best Practices [0.87, 0.25]
-component CSA AI Tools Skunkworks [0.22, 0.20]
-component AI Generating and testing Exam questions [0.70, 0.60]
-component AI information summarization and dissemination [0.56, 0.32]
-component AI information discovery [0.39, 0.11]
-component AI Content creation tools [0.71, 0.36]
-component Content created by AI [0.87, 0.40]
+component AI Tool Discovery/Research [0.77, 0.14]
+component AI Best Practices [0.87, 0.15]
+component CSA AI Tools Skunkworks [0.22, 0.02]
+component AI Generating and testing Exam questions [0.74, 0.56]
+component AI information summarization and dissemination [0.60, 0.43]
+component AI information discovery [0.41, 0.09]
+component AI Content creation tools [0.73, 0.37]
+component Content created by AI [0.88, 0.33]
+component CSA AI TutorBot [0.90, 0.50]
 
-// CSA Thought work
+// CSA Thought work, specific formats
 //
-component CSA Wardley Maps [0.73, 0.43]
-component CSA Mind Maps [0.79, 0.56]
+component Wardley Maps [0.76, 0.49]
+component Mind Maps [0.82, 0.55] label [5, -10]
+component Threat Models [0.88, 0.57]
 
 // Capabilities / areas to address
 component AI handling of user Feedback [0.69, 0.49]
 component Stakeholder engagement [0.22, 0.50]
 // We need some better reporting/data to support the following:
-component Success Metrics/KPIs [0.63, 0.16]
+component Success Metrics/KPIs [0.53, 0.05] label [-25, -28]
 
 // We need to standardize and do better internally on:
-component Project Management [0.14, 0.76]
-component Task Management [0.19, 0.85]
+component Project Management [0.13, 0.83]
+component Task Management [0.10, 0.76]
 
 component Moving Tasks forwards in chunks - less interruptions [0.95, 0.95]
+
+//
+//
+//
+
+Zapier Zaps -> CSA IT Automation
+CSA IT Automation -> CSA IT
+// INSIGHT: Zapier Zaps are probably the most efficient/cost effective way to quickly automate IT tasks, and then if they truely are high volume we can look at using AI to build internal Python tooling
+
+// CSA Chapter stuff
+CSA IT Chapters -> User - CSA Chapters
+CSA IT Chapters -> CSA Chapters Virtual Events
+CSA Chapters Virtual Events -> User - CSA Chapters
+// INSIGHT: CSA Chapter events will need basically 100% support/automation from us, e.g. signups, calendar, etc. which makes sense, we can do it
+
+// CSA WG Stuff
+CSA WG Standardization -> CSA IT Automation
+CSA IT Automation -> User - CSA WGs
+
+// CSA Internal process stuff
+Task Management -> Project Management
+Project Management -> CSA IT
+
+// CSA Exam stuff
+CSA AI TutorBot -> User - CSA Exams
+CSA AI Tools External (Agents, RAG, etc.) -> CSA AI TutorBot
+
+
+// AI Content creation
+AI Content creation tools -> CSA Content (int/external)
+AI Content creation tools -> Wardley Maps
+AI Content creation tools -> Mind Maps
+AI Content creation tools -> Threat Models
+AI Content creation tools -> AI Generating and testing Exam questions
+AI Generating and testing Exam questions -> User - CSA Exams
+
+
+// AI Tools
+Prompt Engineering -> CSA AI Tools Internal (Agents, RAG, etc.)
+CSA AI Tools Internal (Agents, RAG, etc.) -> AI information summarization and dissemination
+AI information summarization and dissemination -> User - CSA Research
+AI information summarization and dissemination -> User - CSA WGs
