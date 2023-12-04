@@ -1,30 +1,30 @@
-title Kurt Seifried (professional)
+Title: Kurt Seifried (professional)
 
 // CSA Users
 //
-component User - CSA Internal [0.99, 0.10]
-component User - CSA Research [0.99, 0.25]
-component User - CSA WGs [0.99, 0.40]
-component User - CSA Chapters [0.99, 0.55]
-component User - CSA Members [0.99, 0.70]
-component User - Public [0.99, 0.85]
+component User - CSA Internal [0.99, 0.30]
+component User - CSA Research [0.99, 0.40]
+component User - CSA WGs [0.99, 0.55]
+component User - CSA Chapters [0.99, 0.65]
+component User - CSA Members [0.99, 0.80]
+component User - Public [0.99, 0.90]
 
 // Basic duties
 //
-component CSA IT [0.02, 0.02]
-component CSA IT Automation [0.02, 0.02]
-component CSA WG Standardization [0.02, 0.02]
-component CSA IT Chapters [0.02, 0.02]
-component CSA Chapters Virtual Events [0.44, 0.47]
+component CSA IT [0.10, 0.20]
+component CSA IT Automation [0.15, 0.25]
+component CSA WG Standardization [0.20, 0.30]
+component CSA IT Chapters [0.25, 0.35]
+component CSA Chapters Virtual Events [0.50, 0.60]
 
-// Basic specific technmical skills
+// Basic specific technical skills
 //
-component Zapier [0.20, 0.62]
-component Prompt Engineering [0.54, 0.21]
+component Zapier [0.30, 0.70]
+component Prompt Engineering [0.60, 0.40]
 
 // Continuing content creation
 //
-component CSA Content (int/external) [0.02, 0.02]
+component CSA Content (int/external) [0.10, 0.20]
 // blogs
 // internal memos?
 // papers
@@ -33,39 +33,35 @@ component CSA Content (int/external) [0.02, 0.02]
 
 // CSA AI outcomes
 //
-component CSA AI Strategy [0.44, 0.02]
-component CSA AI Tools External (Agents, etc.) [0.73, 0.21]
-component CSA AI Tools Internal (Agents, etc.) [0.30, 0.47]
-component CSA AI Processes/Docs [0.02, 0.02]
+component CSA AI Strategy [0.50, 0.20]
+component CSA AI Tools External (Agents, etc.) [0.80, 0.30]
+component CSA AI Tools Internal (Agents, etc.) [0.40, 0.55]
+component CSA AI Processes/Docs [0.10, 0.20]
 
 // CSA Specific AI work
 //
-component AI Tool Discovery/Research [0.68, 0.09]
-component AI Best Practices [0.82, 0.08]
-component CSA AI Tools Skunkworks [0.02, 0.02]
-component AI Generating and testing Exam questions [0.64, 0.50]
-component AI information summarization and dissemination [0.37, 0.11]
-component AI information discovery [0.27, 0.05]
-component AI Content creation tools [0.75, 0.47]
-component Content created by AI [0.81, 0.32]
-
+component AI Tool Discovery/Research [0.75, 0.20]
+component AI Best Practices [0.85, 0.15]
+component CSA AI Tools Skunkworks [0.10, 0.20]
+component AI Generating and testing Exam questions [0.70, 0.60]
+component AI information summarization and dissemination [0.50, 0.25]
+component AI information discovery [0.35, 0.15]
+component AI Content creation tools [0.80, 0.55]
+component Content created by AI [0.85, 0.40]
 
 // CSA Thought work
 //
-component CSA Wardley Maps [0.02, 0.02]
-component CSA Mind Maps [0.02, 0.02]
+component CSA Wardley Maps [0.10, 0.20]
+component CSA Mind Maps [0.10, 0.20]
 
 // Capabilities / areas to address
-component AI handling of user Feedback [0.61, 0.08]
-component Stakeholder engagement [0.02, 0.02]
+component AI handling of user Feedback [0.70, 0.20]
+component Stakeholder engagement [0.10, 0.20]
 // We need some better reporting/data to support the following:
-component Success Metrics/KPIs [0.50, 0.10]
+component Success Metrics/KPIs [0.60, 0.20]
 
 // We need to standardize and do better internally on:
-component Project Management [0.02, 0.02]
-component Task Management [0.02, 0.02]
+component Project Management [0.10, 0.20]
+component Task Management [0.10, 0.20]
 
-
-component Mopving Tasks forwards in chunks - less interuptions [0.90, 0.90]
-
-
+component Moving Tasks forwards in chunks - less interruptions [0.95, 0.95]
