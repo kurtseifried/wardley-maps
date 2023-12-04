@@ -67,7 +67,7 @@ component Success Metrics/KPIs [0.53, 0.05] label [-25, -28]
 component Project Management [0.13, 0.83]
 component Task Management [0.10, 0.76]
 
-component Moving Tasks forwards in chunks - less interruptions [0.95, 0.95]
+component Moving Tasks forwards in chunks - less interruptions [0.88, 0.95]
 
 //
 //
@@ -86,15 +86,18 @@ CSA Chapters Virtual Events -> User - CSA Chapters
 // CSA WG Stuff
 CSA WG Standardization -> CSA IT Automation
 CSA IT Automation -> User - CSA WGs
+// INSIGHT: IT AUTOMATION NEEDS TO BE THE OUTCOME OF TOOLS AND PROCESS, not just the goal
+
 
 // CSA Internal process stuff
 Task Management -> Project Management
 Project Management -> CSA IT
+// INSIGHT WE CANNOT COLLAB EFFECTIVELY WITHOUT THIS - AIRTABLE? STANDARDIZATION?
 
 // CSA Exam stuff
 CSA AI TutorBot -> User - CSA Exams
 CSA AI Tools External (Agents, RAG, etc.) -> CSA AI TutorBot
-
+// INSIGHT: WE CAN'T DO THIS UNTIL WE USE AI TOOLS BETTER
 
 // AI Content creation
 AI Content creation tools -> CSA Content (int/external)
@@ -103,10 +106,14 @@ AI Content creation tools -> Mind Maps
 AI Content creation tools -> Threat Models
 AI Content creation tools -> AI Generating and testing Exam questions
 AI Generating and testing Exam questions -> User - CSA Exams
-
+// INSIGHT: TOOLS TO BUILD TOOLS. MACHINE TOOLS. COMPOUND INTEREST. SR-71.
+// INSIGHT: ALSO PROCESS. TOOLS WITHOUT PROCESS AND BEST PRACTICES AND QA ON OUTCOME ARE USELESS
+// INSIGHT: THE AI RESOURCE LIBRARY IS CRITICAL HERE AN DNEEDS TO CONTAIN ITEMS WHICH WE CREATE THAT ARE SUMMARIES/PASTICHES/SYHNTHESIZED OUTCOMES OF OTHER  THINGS
 
 // AI Tools
 Prompt Engineering -> CSA AI Tools Internal (Agents, RAG, etc.)
 CSA AI Tools Internal (Agents, RAG, etc.) -> AI information summarization and dissemination
 AI information summarization and dissemination -> User - CSA Research
 AI information summarization and dissemination -> User - CSA WGs
+// INSIGHT FOCUS ON AI TOOLS THAT NOT ONLY BUILD TOOLS BUT BUY US WINS NOW, like inf summarization/processing
+
