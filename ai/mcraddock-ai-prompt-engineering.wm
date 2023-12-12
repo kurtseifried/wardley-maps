@@ -1,0 +1,274 @@
+// https://twitter.com/mcraddock/status/1641537955507347476
+// https://t.co/f9HQviraks
+
+
+title Prompt Engineering (Public)
+anchor Prompt Engineer [0.99, 0.27]
+
+component Techniques [0.75, 0.54] label [-38, -16]
+component Chunks [0.39, 0.62] label [-17, 23]
+component Text Splitter [0.34, 0.67]
+component Embedding [0.45, 0.59]
+component Tools [0.59, 0.73] label [-19, 24]
+component Agents [0.67, 0.44] label [-22, 20]
+component LLMs [0.16, 0.69] inertia label [-32, -13]
+component LLaMA [0.09, 0.67] label [-52, 7]
+component Cloud [0.04, 0.84] label [-16, 21]
+component Vector DB [0.26, 0.52] label [-31, -16]
+component Question Answer [0.92, 0.58] label [-8, 21]
+component Question Answer with sources [0.92, 0.45] label [-26, 14]
+component Chat Question Answer [0.94, 0.53] label [16, -36]
+component Zapier [0.48, 0.84]
+component Pinecone [0.25, 0.73] label [-36, 26]
+component Memory [0.62, 0.56] label [-22, 20]
+component Chains [0.74, 0.45] label [-21, 22]
+component OpenAIEmbeddings [0.44, 0.71] label [-19, 16]
+component CohereEmbeddings [0.44, 0.47] label [-28, 15]
+component Alpaca [0.12, 0.66] label [-60, 5]
+component Laptop [0.04, 0.66] label [-26, 20]
+component Vector [0.48, 0.58] label [13, 3]
+component Private Data [0.54, 0.28] label [-53, -12]
+component Metadata [0.56, 0.35] label [13, -3]
+component Fine Tuning [0.74, 0.37] label [-34, 21]
+component Prompt Templates [0.63, 0.69] label [-29, 11]
+component Chroma [0.25, 0.57] label [-25, 25]
+component Propriety Algos [0.20, 0.23] label [-36, 25]
+component Supabase [0.25, 0.48] label [-33, 25]
+component API [0.13, 0.86]
+component FastTextEmbeddings [0.44, 0.57] label [-19, 16]
+component ANN [0.20, 0.68] label [-13, 22]
+component kNN [0.20, 0.64] label [-15, 24]
+component SPTAG [0.20, 0.49] label [-27, 25]
+component Faiss [0.20, 0.76] label [-19, 21]
+component Faiss DB [0.25, 0.76] label [-30, 26]
+component HNSW [0.20, 0.60] label [-17, 23]
+component Custom Agents [0.58, 0.24] label [20, 5]
+component Vector Search Algos [0.21, 0.55] label [-61, -45]
+component Public Data [0.10, 0.88]
+component Compute [0.05, 0.75]
+component University Research [0.20, 0.13] label [-24, 12]
+component PDF [0.33, 0.74] label [-21, 24]
+component Text [0.33, 0.77] label [-18, 23]
+component Weaviate [0.25, 0.62] label [-23, 24]
+component Dolly [0.15, 0.64]
+component HuggingFace [0.11, 0.78] label [-34, 25]
+component Conversation History [0.79, 0.33] label [-69, -26]
+component Google Search [0.54, 0.83]
+component Storage [0.50, 0.74]
+component Use Cases [0.97, 0.44]
+component Question Answer Private Data [0.93, 0.37] label [-83, 0]
+component Gaurdrails [0.71, 0.50]
+component HuggingFaceGPT [0.12, 0.74] label [-66, -15]
+component OpenAI [0.13, 0.80] label [-21, 1]
+component Ethics [0.69, 0.72]
+component FinOps [0.59, 0.51] label [16, 4]
+component MLOps [0.59, 0.44] label [-44, 16]
+component DataOps [0.47, 0.49] label [-48, 21]
+component Multi Party Computation [0.28, 0.58]
+component Fully Homomorphic Encryption [0.31, 0.60]
+component User Interface [0.88, 0.53] label [-55, -10]
+component Bubble.io [0.87, 0.78] label [-44, 23]
+component Vercel [0.87, 0.76] label [-23, -24]
+component Steamlit [0.87, 0.74] label [-31, 23]
+component Flowise.ai [0.82, 0.60] label [-36, 23]
+component Steamship [0.82, 0.66] label [-31, 23]
+component Apache NiFi [0.82, 0.78] label [-40, 23]
+component llamahub.ai [0.64, 0.63]
+component LangChainHub [0.62, 0.22]
+component Pipeline Development [0.83, 0.55] label [-36, -37]
+component Tree of Toughts [0.74, 0.24] label [-33, 12]
+component Value Chain Prompting [0.74, 0.20] label [-26, 13]
+component Mobile [0.04, 0.88] label [-27, 25]
+component CapeChat [0.88, 0.38]
+component CapeChat API [0.83, 0.21] label [-49, -13]
+component AWS Nitro Enclaves [0.09, 0.85]
+component RLHF [0.74, 0.29]
+
+
+pipeline User Interface [0.5, 0.8]
+pipeline Pipeline Development [0.4, 0.8]
+User Interface -> Pipeline Development
+
+//UI Options
+
+//component Confidential Inference [0.89, 0.06]
+//component Confidential AI Training
+//component Zilliz
+//component Milvus
+//component Qdrant
+//Redis
+//LlamaIndex
+
+Question Answer -> Techniques
+Question Answer with sources -> Techniques
+Question Answer Private Data -> Techniques
+
+//pioneers, Settlers, Town Planners
+//pioneers [0.80, 0.37, 0.60, 0.59]
+
+// Privacy Preserving Components
+Question Answer Private Data -> CapeChat
+CapeChat -> CapeChat API
+CapeChat API -> Private Data
+CapeChat API -> PETs
+CapeChat API -> Embedding
+AWS Nitro Enclaves -> Cloud
+// Concrete ML: Open-Source FHE-Based Toolkit That Helps in Preserving Privacy And Enables Secure Machine Learning
+//  https://research.facebook.com/blog/2022/10/mpc-based-machine-learning-achieving-end-to-end-privacy-preserving-machine-learning/
+//component Homomorphic Encryption
+//component Secure Multi-Party Computation (SMPC)
+//component Differential Privacy
+//component Zero-Knowledge Proofs
+component ConcreteML [0.38, 0.35] label [-43, 19]
+component PETs [0.49, 0.36]
+component Embedding PETs [0.44, 0.32] label [-50, 29]
+
+PETs -> Private Data
+PETs -> ConcreteML
+PETs -> Embedding PETs
+PETs -> Multi Party Computation
+PETs -> Fully Homomorphic Encryption
+ConcreteML -> Fully Homomorphic Encryption
+evolve Fully Homomorphic Encryption 0.7
+evolve Multi Party Computation 0.7
+
+pipeline Techniques [0.1, 0.6]
+pipeline Vector DB [0.40, 0.8]
+pipeline Text Splitter [0.60, 0.8]
+pipeline Embedding [0.30, 0.8]
+pipeline Compute [0.6, 0.90]
+pipeline Vector Search Algos [0.1, 0.8]
+
+Prompt Engineer -> Use Cases
+
+Use Cases -> Question Answer with sources
+Use Cases -> Chat Question Answer
+Use Cases -> Question Answer Private Data
+
+//Question Answer -> Prompt Templates
+Question Answer -> Chains
+Question Answer -> Fine Tuning
+
+
+
+//Ethics
+Ethics -> Gaurdrails
+
+Prompt Templates -> LLMs
+Prompt Templates -> Vector
+Techniques -> Gaurdrails
+Techniques -> Prompt Templates
+
+Chat Question Answer -> Conversation History
+Conversation History -> Memory
+
+// TO DO: Add Self reflection capabilities to the Wardley Map
+component Self Reflection [0.74, 0.16] label [-30, 18]
+//Self Reflection -> Dynamic Memory
+//component Dynamic Memory [0.62, 0.16] label [-56, -14]
+//evolve Dynamic Memory 0.25 label [-25, 25]
+
+Chains -> Agents
+Agents -> Tools
+Agents -> Custom Agents
+Agents -> Memory
+Agents -> Private Data
+Agents -> MLOps
+Agents -> FinOps
+Agents -> DataOps
+
+llamahub.ai -> Agents
+llamahub.ai -> Embedding
+llamahub.ai -> Text Splitter
+LangChainHub -> Agents
+LangChainHub -> Embedding
+LangChainHub -> Text Splitter
+Custom Agents -> Private Data
+
+Memory -> Storage
+
+Vector -> Question Answer
+Chat Question Answer -> Question Answer
+Chat Question Answer -> Memory
+Question Answer with sources -> Question Answer
+
+Embedding -> Chunks
+
+LLMs -> Public Data
+LLMs -> HuggingFaceGPT
+evolve LLMs 0.8
+
+Alpaca -> LLMs
+Alpaca -> LLaMA
+LLaMA -> Laptop
+LLaMA -> Compute
+Dolly -> Alpaca
+Vector DB -> Vector Search Algos
+
+Private Data -> Vector
+Private Data -> Metadata
+Private Data -> DataOps
+Metadata -> Vector
+Metadata -> Question Answer with sources
+
+// Tools that can be used by agents
+Tools -> Zapier
+Tools -> Google Search
+
+Chunks -> Text Splitter
+Embedding-> Vector DB
+Vector-> Embedding
+
+LLMs -> Compute
+LLMs -> HuggingFace
+HuggingFace -> Cloud
+HuggingFaceGPT -> Compute
+HuggingFaceGPT -> HuggingFace
+
+Vector DB -> Cloud
+OpenAI-> Cloud
+LLMs -> OpenAI
+
+API -> OpenAI
+API -> Zapier
+API -> HuggingFace
+
+evolve Prompt Templates 0.84 label [-23, 14]
+evolve Agents 0.75 label [-25, 25]
+evolve Conversation History 0.66 label [-23, 10]
+//evolve Memory 0.75 label [-25, 25]
+
+style wardley
+evolution genesis / concept  -> custom / emerging  -> product / converging  -> commodity / accepted
+
+// Notes about the Wardley Map
+note Demand for using private data will increase [0.52, 0.22]
+note Select based on use case [0.28, 0.49]
+note Prompt Templates bundles $$$ starting to emerge [0.64, 0.70]
+note Many agents available today [0.68, 0.40]
+note Select based on use case [0.45, 0.52]
+note Select based on use case [0.34, 0.60]
+note Support compliance with ethics policies [0.70, 0.47]
+note Token Cost Management [0.58, 0.49]
+note Repeatable Analytical Pipelines [0.57, 0.39]
+note Chunking key to performant outputs [0.39, 0.56]
+note Open Source is an Accelerator [0.15, 0.71]
+note Inertia is a decelerator [0.17, 0.71]
+// [DERA] (https://arxiv.org/pdf/2303.17071v1.pdf)
+note See DERA Dialog-Enabled Resolving Agents [0.70, 0.06]
+// HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace https://arxiv.org/pdf/2303.17580.pdf
+//note Pioneers [0.91, 0.84]
+
+annotations [0.08, 0.01]
+annotation 1,[0.74,0.08] Components not in final positions
+annotation 2,[0.444,0.28] Components not in final positions
+annotation 3,[0.2, 0.08] Components not in final positions
+annotation 4,[0.63,0.57] Memory is the capacity of remembering previous interactions with the user. Critical for ChatBots
+annotation 5,[0.64,0.45] Focus here. Critical in getting external data not in current LLMs (E.g Google Search)
+annotation 6,[0.1,0.68] LLMs can run locally, or trained for $600 and fine tuned
+annotation 7,[0.76,0.515] Multiple Techniques available, select best fit for use case
+//annotation 8,[0.08,0.49] [Link text Here](https://link-url-here.org)
+
+market OpenAI [0.13, 0.80] label [11, -21]
+market llamahub.ai [0.72, 0.66] label [-39, 34]
+market LangChainHub [0.67, 0.32] label [-52, -27]
