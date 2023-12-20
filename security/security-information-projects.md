@@ -24,6 +24,10 @@ mindmap
       Threat
       Risk
       Weakness
+      Workaround
+      Compenssating control
+      Vendor fix
+      Source code patch
       Participants
         Actor
         Victim
