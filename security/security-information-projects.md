@@ -7,11 +7,15 @@ mindmap
         Decentralized
         Federated
         Distributed
+        Supply-side
+        Demand-side
         Community
           OpenSource
           Working Groups
           Special Interest Groups
     Credibility
+      Third party validation / endorsement
+      Project sponsor / champions
     Discoverability
     Artifacts
       White papers
