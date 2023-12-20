@@ -19,6 +19,13 @@ mindmap
       Advisories
       Bulletins
       TLP/Classification
-    
-
+    Types
+      Vulnerability
+      Threat
+      Risk
+      Weakness
+      Participants
+        Actor
+        Victim
+        
 ```
