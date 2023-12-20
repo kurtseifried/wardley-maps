@@ -31,12 +31,12 @@ mindmap
       Participants
         Actor
         Victim
-  Activities
-    Governance
-    Controls
-  Mental models
-    Mindmaps
-    Wardley Maps
-    MECE
-    Landscapes
+    Activities
+      Governance
+      Controls
+    Mental models
+      Mindmaps
+      Wardley Maps
+      MECE
+      Landscapes
 ```
