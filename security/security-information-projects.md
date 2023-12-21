@@ -38,6 +38,8 @@ mindmap
     Activities
       Governance
       Controls
+      Best Practices
+      Security Quiestionaire 
     Mental models
       Mindmaps
       Wardley Maps
