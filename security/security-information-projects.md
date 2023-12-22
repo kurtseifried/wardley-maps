@@ -29,7 +29,7 @@ mindmap
       Risk
       Weakness
       Workaround
-      Compenssating control
+      Compensating controls
       Vendor fix
       Source code patch
       Participants
@@ -39,10 +39,19 @@ mindmap
       Governance
       Controls
       Best Practices
-      Security Quiestionaire 
+      Security Questionnaire 
     Mental models
       Mindmaps
       Wardley Maps
       MECE
       Landscapes
+    AI Tools
+      Latency
+      Scaling
+      Reproducibility
+      Validation
+      Regenerating
+      Outlining
+      Grouping
+      Enriching
 ```
