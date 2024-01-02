@@ -1,0 +1,34 @@
+title AI Vulnerabilities and Weaknesses
+
+// 
+component AI Producers [0.92, 0.32]
+component AI SaaS [0.86, 0.59]
+// Users who talk to the ai "directly" vs those who talk to an AI through a SaaS, and now have an entire SaaS to attack
+component AI Users [0.97, 0.29]
+component AI SaaS Consumers [0.98, 0.60]
+//
+component AI Service Purchasing Agent [0.94, 0.48] label [3, -10]
+
+component CSA AI Vuln Weakness Attack List [0.53, 0.29] label [5, -10]
+
+component CWE [0.07, 0.37]
+component CodeVulnScanners [0.53, 0.55]
+component Top 10 lists [0.70, 0.20]
+
+component Vulnerability Lists non-curated [0.13, 0.13]
+
+// mindmaps, one for attacks/vulns, and one for outcomes
+component mindmap of CSA AI Vuln Weakness Attack List [0.60, 0.19]
+
+component AI ecosystem level of attack
+component grouping or classes of attacks [0.72, 0.05]
+
+CWE->CodeVulnScanners
+
+CSA AI Vuln Weakness Attack List -> AI SaaS
+CSA AI Vuln Weakness Attack List -> AI Service Purchasing Agent
+AI SaaS -> AI Service Purchasing Agent
+AI Service Purchasing Agent -> AI SaaS Consumers
+
+//
+CSA AI Vuln Weakness Attack List -> Top 10 lists
