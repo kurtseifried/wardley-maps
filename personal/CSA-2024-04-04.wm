@@ -1,0 +1,47 @@
+title CSA Chief Innovation Officer
+
+// This map focuses on Kurt Seifried CIO duties
+
+//
+// CSA Users
+//
+anchor CSA Internal [0.98, 0.63]
+anchor CSA External [0.98, 0.47]
+
+
+//
+// Core duties
+//
+
+component AI Strategy [0.16, 0.01]
+evolve AI Strategy 0.3
+
+component AI Policy [0.23, 0.01]
+evolve AI Policy 0.4
+
+component AI Projects [0.67, 0.13]
+evolve AI Projects 0.5
+
+component CSA use of AI [0.77, 0.01]
+evolve CSA use of AI 0.9
+
+//
+// AI Capabilities
+//
+component Content creation via AI [0.32, 0.04]
+component Content validation via AI [0.41, 0.05]
+component Information processing and routing via AI [0.51, 0.09] label [5, -10]
+component Automation with and via AI [0.57, 0.23] 
+
+
+//
+// Finding and building as little as possible
+//
+component AI Technical Capabilities [0.45, 0.20]
+evolve AI Technical Capabilities 0.9
+
+Content creation via AI ->  Content validation via AI
+Content validation via AI -> Information processing and routing via AI
+
+
+
